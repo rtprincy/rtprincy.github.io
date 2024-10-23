@@ -1,8 +1,8 @@
 main {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;
     gap: 0%;
-    padding: 0%;
+    padding: 0%;*/
 }
 .full-width-section {
     width: 70%; /* Full width of the page */
