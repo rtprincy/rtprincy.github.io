@@ -1,34 +1,26 @@
 main {
     display: flex;
     justify-content: space-between;
-    gap: 5px;
-    padding: 10px;
+    gap: 1%;
+    padding: 1%;
 }
-
-
 .full-width-section {
     width: 70%; /* Full width of the page */
     padding: 1%; /* Optional padding as a percentage of the viewport */
-    
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #f4f4f4; /* Optional background for the section */
+    background-color: ghostwhite; /* Optional background for the section */
     text-align: center;
-    justify-content: center;
-    margin-inline: 200px;
-    margin-top: 1px;
-/*    margin-bottom: 1px;*/
+    margin: 2%;
 }
-
 
 /* Styling for the left column */
 .column-left{
     display: flex;          /* Use Flexbox inside columns */
     flex-direction: column;  /* Stack content vertically */
     justify-content: flex-start; /* Align content at the top */
-    gap: 10px;               /* Add space between sections */
+    gap: 1%;               /* Add space between sections */
     flex: 1;
     max-width: 50%;
-    margin-left: 10px;
+    margin-left: 1%;
 }
 
 
@@ -40,19 +32,26 @@ main {
     gap: 10px;               /* Add space between sections */
     flex: 2;
     max-width: 50%;
-    margin-left: 10px;
+    margin-left: 1%;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
+    display: grid;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.5;
+    justify-content: center;
+    min-height: 100vh;        /* Ensure it takes the full viewport height */
+    place-items: center;
+    font-size: 100%;
+
 }
 
 header {
+    width: 100%;
     background: #333;
     color: #fff;
-    padding: 20px;
+    padding: 1.5%;
     text-align: center;
 }
 
@@ -69,7 +68,7 @@ nav a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 1%;
 }
 
 h2 {
@@ -83,28 +82,29 @@ footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 1% 0;
+    margin-top: 2%;
+    width: 100%;
 }
 
 nav ul {
         list-style: none;
         display: flex;
         justify-content: center;
-        padding: 10px 0;
+        padding: 1% 0;
     }
 
 nav ul li a {
 
         color: #333;
         text-decoration: none;
-        padding: 0.5rem;
+        padding: 0.5%;
     }
 
 nav ul li a:hover {
         background-color: #2980b9;
-        padding: 0.5rem;
-        border-radius: 5px;
+        padding: 0.5%;
+        border-radius: 1%;
     }
 
 /* Responsive Navigation Bar */
@@ -136,19 +136,19 @@ nav ul.show {
         }
     }
 .project-card {
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 1rem;
-        margin-bottom: 1rem;
+        border: 1% solid #ddd;
+        border-radius: 1%;
+        padding: 2%;
+        margin-bottom: 2%;
         background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2% 4% rgba(0, 0, 0, 0.1);
 
 
     }
 
 h2 img {
         vertical-align: middle;
-        margin-right: 10px;
+        margin-right: 1%;
     }
 
 form {
@@ -169,10 +169,10 @@ form input[type="text"],
 form input[type="email"],
 form textarea {
     width: 100%; /* Make inputs and textareas take full width of the form */
-    padding: 10px; /* Add padding inside input fields */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 4px; /* Rounded corners for inputs */
-    margin-bottom: 15px; /* Space between inputs */
+    padding: 2%; /* Add padding inside input fields */
+    border: 1% solid #ccc; /* Light gray border */
+    border-radius: 1%; /* Rounded corners for inputs */
+    margin-bottom: 2%; /* Space between inputs */
 }
 
 form input[type="submit"] {
@@ -189,26 +189,26 @@ form input[type="submit"]:hover {
 }
 
 /* Optional: Responsive design */
-@media (max-width: 500px) {
+@media (max-width: 50%) {
     form {
         width: 90%; /* Use 90% width on smaller screens */
     }
 }
 .centered-heading {
     text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Space between heading and form */
+    margin-bottom: 2%; /* Space between heading and form */
 }
 
 .headshot {
             position: absolute;
-            top: 10px;
-            right: 20px;
-            width: 150px;
-            height: 150px;
+            top: 3%;
+            right: 1%;
+            width: 10%;
+            height: 20%;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid white;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 5% rgba(0, 0, 0, 0.3);
         }
 
 .contact-info {
@@ -216,21 +216,14 @@ form input[type="submit"]:hover {
             padding: 0;
         }
 .contact-info li {
-            margin: 5px 0;
+            margin: 1% 0;
         }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.item {
-  flex: 1 1 100%; /* Full width on mobile */
-}
-
-@media (min-width: 768px) {
-  .item {
-    flex: 1 1 50%; /* Two columns on tablets and larger screens */
-  }
-}
-
+section{
+      width: 95%;
+      padding: 2%;
+      background-color: #f4f4f4;
+      text-align: justify;
+/*      justify-content: space-evenly;*/
+    }
