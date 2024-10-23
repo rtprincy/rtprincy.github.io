@@ -1,3 +1,47 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px;
+}
+
+
+.full-width-section {
+    width: 70%; /* Full width of the page */
+    padding: 1%; /* Optional padding as a percentage of the viewport */
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4; /* Optional background for the section */
+    text-align: center;
+    justify-content: center;
+    margin-inline: 200px;
+    margin-top: 1px;
+/*    margin-bottom: 1px;*/
+}
+
+
+/* Styling for the left column */
+.column-left{
+    display: flex;          /* Use Flexbox inside columns */
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: flex-start; /* Align content at the top */
+    gap: 10px;               /* Add space between sections */
+    flex: 1;
+    max-width: 50%;
+    margin-left: 10px;
+}
+
+
+/* Styling for the right column */
+.column-right{
+    display: flex;          /* Use Flexbox inside columns */
+    flex-direction: column;  /* Stack content vertically */
+    justify-content: flex-start; /* Align content at the top */
+    gap: 10px;               /* Add space between sections */
+    flex: 2;
+    max-width: 50%;
+    margin-left: 10px;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,15 +52,16 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
 }
 
 nav a {
     color: #fff;
-    padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
+
 }
 
 nav a:hover {
@@ -27,8 +72,11 @@ main {
     padding: 20px;
 }
 
-h1, h2 {
+h2 {
     color: #333;
+}
+header h1 {
+    color: white;
 }
 
 footer {
@@ -38,3 +86,135 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
+nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+nav ul li a {
+
+        color: #333;
+        text-decoration: none;
+        padding: 0.5rem;
+    }
+
+nav ul li a:hover {
+        background-color: #2980b9;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+
+/* Responsive Navigation Bar */
+    .burger {
+        display: none;
+
+    }
+
+@media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+            display: none;
+        }
+        
+nav ul.show {
+            display: block;
+        }
+
+.burger {
+            display: block;
+            cursor: pointer;
+        }
+
+.burger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px;
+        }
+    }
+.project-card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+    }
+
+h2 img {
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+form {
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #fff; /* Set background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+form label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Spacing between label and input */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; /* Make inputs and textareas take full width of the form */
+    padding: 10px; /* Add padding inside input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+form input[type="submit"] {
+    background-color: #2980b9; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners for button */
+}
+
+form input[type="submit"]:hover {
+    background-color: #3498db; /* Change color on hover */
+}
+
+/* Optional: Responsive design */
+@media (max-width: 500px) {
+    form {
+        width: 90%; /* Use 90% width on smaller screens */
+    }
+}
+.centered-heading {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space between heading and form */
+}
+
+.headshot {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+.contact-info {
+            list-style: none;
+            padding: 0;
+        }
+.contact-info li {
+            margin: 5px 0;
+        }

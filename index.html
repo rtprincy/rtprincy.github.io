@@ -5,33 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Ranaivomanana</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/js/menu.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Astronomy Research Page</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="research.html">Research</a>
-            <a href="cv.html">CV</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <h1>Tahina Princy Ranaivomanana</h1>
+        <p>PhD candidate in Astronomy at Radboud University and KU Leuven</p>
+        <img src="images/headshot.jpg" alt="My Headshot" class="headshot">
     </header>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>I am a joint-PhD candidate in Astronomy at Radboud University and KU Leuven. My research is dedicated to advancing the understanding of the formation and evolution of hot sub-luminous stars by leveraging multiband time-series data and machine learning methodologies.</p>
+
+<!--     <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="cv.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav> -->
+
+
+        <section class="full-width-section">
+    
+        <h2><img src="icons/about_me.png" alt="About icon" width="24"> About Me</h2>
+        <p>I am a joint-PhD candidate in Astronomy at Radboud University and KU Leuven. My research is dedicated to advancing the understanding of the formation and evolution of hot sub-luminous stars by leveraging multiband time-series data and machine learning methodologies. <a href="about.html">Learn more</a></p>
+
         </section>
-        <section>
-            <h2>Recent Publications</h2>
+        <main>
+        <div class="column-left">
+                        <section>
+            <h2><img src="icons/project.png" alt="Projects icon" width="24"> Current Projects</h2>
+                <div class="project-card">
+                    <strong>Project 1: Unsupervised machine learning for variable stars identification and characterisation </strong>
+                    <p>The aim of this project is to leverage machine learning techniques to characterise the variablity of hot subdwarfs (evolved compact stars) observed from the Gaia mission. The t-distributed stochastic neighbor embedding (t-SNE) dimensionality reduction algorithm was used to visualise high-dimensional feature space (mainly Gaia DR3 lightcurve statistical parameters) in a low-dimensional feature space, resulting in distinctive clusters in the t-SNE 2-D embeddings. This helps in discovering diverse types of new variables, which are crucial for understanding their formation and evolution.</p>
+                </div>
+                <div class="project-card">
+                    <strong>Project 2: Mode identification using amplitude ratio</strong>
+                    <p>This project aims to explore multi-band pulsational amplitudes of pulsating hot subdwarfs to identify pulsation frequency modes through the amplitude ratio techniques.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="column-right">
+            <section>
+            <h2><img src="icons/publication_icon.png" alt="Publications icon" width="24"> Recent Publications</h2>
             <ul>
-                <li><a href="#">Title of Paper 1</a></li>
-                <li><a href="#">Title of Paper 2</a></li>
+                <li>
+                    <a href="https://arxiv.org/abs/2302.07266">Identifying and characterising the population of hot sub-luminous stars with multi-colour MeerLICHT data</a>
+                </li>
             </ul>
-        </section>
-    </main>
+            </section>
+            <section>
+            <h2><img src="icons/publication_icon.png" alt="Publications icon" width="24"> My resume</h2>
+             <p>To learn more about my research experience and skills, feel free to take a look at my CV below.</p>
+            <p><a href="assets/YourCV.pdf">Download PDF</a></p>
+            </section> 
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach me via email or social media.</p>
+        <ul class="contact-info">
+            <li><strong>Email:</strong> <a href="mailto:princy.ranaivomanana@ru.nl">princy.ranaivomanana@ru.nl</a></li>
+            <!-- <li><strong>Office:</strong> [Building and Room Number]</li> -->
+            <!-- <li><strong>University:</strong> Radboud University</li> -->
+            <li><strong>Social Media:</strong>  <a href="https://linkedin.com/in/rtprincy">LinkedIn</a></li>
+        </ul>
+    </section>
+
+        </div>
+
+        </main>
+        <!-- <p class="full-width-section">If you'd like to know more about my journey and my work, feel free to <a href="contact.html">contact me</a>.</p>   -->
+    
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Princy Ranaivomanana</p>
     </footer>
 </body>
+
+
 </html>
