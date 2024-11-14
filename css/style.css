@@ -183,7 +183,7 @@ figure figcaption {
 @media screen and (max-width: 768px) {
     #colorlib-aside {
         width: 100%;
-        position: fixed;
+        position: relative;
         height: auto;
     }
 
@@ -193,8 +193,8 @@ figure figcaption {
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 3em 0;
-        background-color: lightblue; /* Background for the header area #f8f9fa*/
+        padding: auto 0;
+        background-color: #f8f9fa; /* Background for the header area #f8f9fa*/
     }
 
     /* Set the nav menu to be horizontal on mobile */
