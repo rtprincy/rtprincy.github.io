@@ -185,6 +185,8 @@ figure figcaption {
         width: 100%;
         position: relative;
         height: auto;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     /* Stack profile image and menu at the top */
@@ -280,10 +282,10 @@ figure figcaption {
 	margin: 0;
 	padding: 0;
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
 	#colorlib-aside #colorlib-main-menu ul {
 		margin: 0 0 2em 0;
-	}
+	}*/
 }
 #colorlib-aside #colorlib-main-menu ul li {
 	margin: 0 0 10px 0;
@@ -357,7 +359,7 @@ figure figcaption {
 	width: 100%;
 }
 @media screen and (max-width: 768px) {
-	#colorlib-aside .colorlib-footer {
+    .colorlib-footer {
 		position: fixed;
 		height: auto;
 	}
@@ -414,12 +416,12 @@ figure figcaption {
 	-o-transition: 0.5s;
 	transition: 0.5s;
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
 	#colorlib-main {
 		width: 100%;
 		padding: 0 1em;
 	}
-}
+}*/
 
 #colorlib-hero {
 	min-height: 500px;
@@ -452,12 +454,12 @@ figure figcaption {
 	float: left;
 	width: auto;
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
 	#colorlib-hero .flexslider .flex-control-nav {
 		right: 20px;
 		top: 100px;
 	}
-}
+}*/
 #colorlib-hero .flexslider .flex-control-nav li {
 	display: block;
 	margin-bottom: 10px;
@@ -491,11 +493,11 @@ figure figcaption {
 	padding: 2.5em;
 	position: relative;
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
 	#colorlib-hero .flexslider .slider-text > .slider-text-inner {
 		text-align: center;
 	}
-}
+}*/
 #colorlib-hero .flexslider .slider-text > .slider-text-inner h1,
 #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
 	margin: 0;
@@ -638,6 +640,7 @@ body.offcanvas .colorlib-nav-toggle {
 	.colorlib-skills,
 	.colorlib-profile,
 	.colorlib-projects,
+	.colorlib-blogs,
 	.colorlib-training,
 	.colorlib-education,
 	.colorlib-work,
@@ -649,9 +652,9 @@ body.offcanvas .colorlib-nav-toggle {
 		padding-bottom: 0em;
 	}
 	
-	.colorlib-blogs {
+	/*.colorlib-blogs {
 		display: none;
-	}
+	}*/
 
 	.profile-cards {
 		display: flex;
