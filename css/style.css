@@ -154,30 +154,11 @@ figure figcaption {
 		padding-top: 4em;
 		background-color: ghostwhite;
 		height: auto;
-/*		position: fixed;*/
-/*		z-index: 1000;*/
-/*		left: 0;*/
 	}
 	.resume-content img {
 		display: none;
 	}
-/*    #colorlib-main {*/
-/*        margin-left: 0; /* Adjust main content */*/
-/*    }*/
 }
-
-/*@media screen and (max-width: 768px) {*/
-/*    #colorlib-aside {*/
-/*        width: 100%; /* Full width on mobile */*/
-/*        position: fixed; /* Keep fixed to prevent jumping */*/
-/*        z-index: 1000; /* Ensure it stays above main content */*/
-/*        left: 0;*/
-/*    }*/
-
-/*    #colorlib-main {*/
-/*        margin-left: 0; /* Adjust main content */*/
-/*    }*/
-/*}*/
 
 .resume-content img {
 	margin: 0 10px;
