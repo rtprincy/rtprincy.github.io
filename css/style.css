@@ -183,7 +183,7 @@ figure figcaption {
 @media screen and (max-width: 768px) {
     #colorlib-aside {
         width: 100%;
-        position: relative;
+        position: fixed;
         height: auto;
     }
 
@@ -192,7 +192,7 @@ figure figcaption {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1em 0;
+        padding: 3em 0;
         background-color: #f8f9fa; /* Background for the header area */
     }
 
