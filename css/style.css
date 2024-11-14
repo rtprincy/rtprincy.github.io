@@ -145,24 +145,25 @@ figure figcaption {
 }
 @media screen and (max-width: 768px) {
 	#colorlib-aside {
-		width: 100%;
-/*		-moz-transform: translateX(-300px);
+		width: 300px;
+		-moz-transform: translateX(-300px);
 		-webkit-transform: translateX(-300px);
 		-ms-transform: translateX(-300px);
 		-o-transform: translateX(-300px);
-		transform: translateX(-300px);*/
+		transform: translateX(-300px);
 		padding-top: 4em;
 		background-color: ghostwhite;
 		height: auto;
+		position: fixed;
 /*		z-index: 1000;*/
-		left: 0;
+/*		left: 0;*/
 	}
 	.resume-content img {
 		display: none;
 	}
-    #colorlib-main {
-        margin-left: 0; /* Adjust main content */
-    }
+/*    #colorlib-main {*/
+/*        margin-left: 0; /* Adjust main content */*/
+/*    }*/
 }
 
 /*@media screen and (max-width: 768px) {*/
