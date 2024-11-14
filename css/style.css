@@ -143,35 +143,40 @@ figure figcaption {
 	-o-transition: 0.5s;
 	transition: 0.5s;
 }
-/*@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	#colorlib-aside {
-		width: 300px;
-		-moz-transform: translateX(-300px);
+		width: 100%;
+/*		-moz-transform: translateX(-300px);
 		-webkit-transform: translateX(-300px);
 		-ms-transform: translateX(-300px);
 		-o-transform: translateX(-300px);
-		transform: translateX(-300px);
+		transform: translateX(-300px);*/
 		padding-top: 4em;
 		background-color: ghostwhite;
 		height: auto;
+		z-index: 1000;
+		left: 0;
 	}
 	.resume-content img {
 		display: none;
 	}
-}*/
-
-@media screen and (max-width: 768px) {
-    #colorlib-aside {
-        width: 100%; /* Full width on mobile */
-        position: fixed; /* Keep fixed to prevent jumping */
-        z-index: 1000; /* Ensure it stays above main content */
-        left: 0;
-    }
-
     #colorlib-main {
         margin-left: 0; /* Adjust main content */
     }
 }
+
+/*@media screen and (max-width: 768px) {*/
+/*    #colorlib-aside {*/
+/*        width: 100%; /* Full width on mobile */*/
+/*        position: fixed; /* Keep fixed to prevent jumping */*/
+/*        z-index: 1000; /* Ensure it stays above main content */*/
+/*        left: 0;*/
+/*    }*/
+
+/*    #colorlib-main {*/
+/*        margin-left: 0; /* Adjust main content */*/
+/*    }*/
+/*}*/
 
 .resume-content img {
 	margin: 0 10px;
