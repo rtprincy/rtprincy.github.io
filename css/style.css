@@ -2256,4 +2256,19 @@ span {
     text-align: right;
     font-weight: 100;
 }
+
+@media screen and (min-width: 768px) {
+    #colorlib-aside #colorlib-main-menu .collapse {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #colorlib-aside #colorlib-main-menu .collapse {
+        display: none;
+    }
+}
+.menu-opened .collapse {
+    display: block !important;
+}
   
