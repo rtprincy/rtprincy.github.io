@@ -155,6 +155,7 @@ figure figcaption {
 		background-color: ghostwhite;
 		height: auto;
 		position: fixed;
+		z-index: 1000;
 	}
 	.resume-content img {
 		display: none;
