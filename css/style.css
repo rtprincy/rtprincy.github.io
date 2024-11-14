@@ -216,7 +216,7 @@ figure figcaption {
 	width: 100%;
 }
 #colorlib-aside #colorlib-main-menu .collapse {
-	display: block !important;
+	display: block;
 }
 #colorlib-aside #colorlib-main-menu ul {
 	text-align: center;
