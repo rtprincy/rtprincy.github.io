@@ -364,8 +364,8 @@ figure figcaption {
 		align-content: center;
 		padding-bottom: 3%;
 		padding-top: 3%;
-		padding-right: 3em;
-		padding-left: 3em;
+		left: 0;
+		right: 0;
 		border-radius: 5%;
 	}
 }
