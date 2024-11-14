@@ -154,7 +154,7 @@ figure figcaption {
 		padding-top: 5em;
 		background-color: ghostwhite;
 		height: auto;
-		position: absolute;
+		position: fixed;
 	}
 	.resume-content img {
 		display: none;
