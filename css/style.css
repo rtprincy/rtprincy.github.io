@@ -2191,7 +2191,7 @@ span {
   footer {
 	font-size: 13px;
 	background: var(--footer-bg);
-	padding: 2em 4em;
+	padding: 1em 5em;
 	/* display: flex; */
 	align-items: start;
 	justify-content: center;
