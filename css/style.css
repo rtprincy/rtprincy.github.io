@@ -143,7 +143,7 @@ figure figcaption {
 	-o-transition: 0.5s;
 	transition: 0.5s;
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
 	#colorlib-aside {
 		width: 300px;
 		-moz-transform: translateX(-300px);
@@ -160,6 +160,42 @@ figure figcaption {
 	.resume-content img {
 		display: none;
 	}
+}*/
+
+@media screen and (max-width: 768px) {
+    #colorlib-aside {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    /* Stack profile image and menu at the top */
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0;
+        background-color: #f8f9fa; /* Background for the header area */
+    }
+
+    /* Set the nav menu to be horizontal on mobile */
+    #colorlib-main-menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    /* Style each menu item */
+    #colorlib-main-menu ul li {
+        margin: 0.5em;
+    }
+
+    #colorlib-main {
+        margin-left: 0; /* Remove sidebar space */
+    }
 }
 
 .resume-content img {
