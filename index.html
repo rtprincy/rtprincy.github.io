@@ -1,340 +1,867 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="h-full">
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>Princy Ranaivomanana</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="description" content="Princy Ranaivomanana personal WebPage">
-   <meta name="google-site-verification" content="OJ9EYQkAKrkVLsMbW6UAG4ZBa1yoaJQ4neRPVJMV924" />
-   <meta name="google-site-verification" content="puQOo_AWJsJjBhdBTbJHBafwtMwT2L8P5jnr-xFv4Co" />
-   <meta name="keywords" content="Princy, Ranaivomanana">
-   <meta name="author" content="Princy Ranaivomanana">
-   <meta name="robots" content="index, follow">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="icon" type="image/png" href="/images/logo.png">
-   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/animate.css">
-   <link rel="stylesheet" href="css/bootstrap.css">
-   <link rel="stylesheet" href="css/style.css">
-   <script src="js/modernizr-2.6.2.min.js"></script>
-   <script src="js/profile-card.js"></script>
-   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Princy Ranaivomanana",
-      "description": "Princy Ranaivomanana personal WebPage",
-      "url": "https://rtprincy.github.io"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academic Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body { box-sizing: border-box; }
+
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+    .font-body { font-family: 'Source Sans 3', system-ui, sans-serif; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #1f2937 0%, #334155 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    </script>
+
+    .card {
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px -12px rgba(0,0,0,.15);
+    }
+
+    .tab-indicator {
+      transition: transform .3s cubic-bezier(.4,0,.2,1);
+    }
+
+    .tab-content {
+      animation: fadeSlide .35s ease-out;
+    }
+
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+  </style>
 </head>
 
-<body>
-   <div id="colorlib-page">
-      <div class="container-wrap">
-         <!-- <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-            aria-expanded="false" aria-controls="navbar"><i></i></a> -->
-         <aside id="colorlib-aside" role="complementary" class="border js-fullheight no-print">
-                <div class="header-content"> <!-- New container for top display on mobile -->
-                    <div class="text-center">
-                        <div class="author-img">
-                            <img alt="profile-img" src="images/headshot.jpg">
-                        </div>
-                        <h1 id="colorlib-logo" style="font-size: 25px;"> <a href="./index.html">Princy Ranaivomanana, PhD</a></h1>
-                    </div>
+<body class="h-full font-body bg-slate-50 text-slate-800">
 
-                    <!-- Navigation menu now within header-content -->
-                    <nav id="colorlib-main-menu" role="navigation" class="navbar">
-                      <div id="navbar" class="collapse">
-                        <ul>
-                            <li><a href="#" data-nav-section="about">About</a></li>
-                            <li><a href="#" data-nav-section="skills">Skills</a></li>
-                            <li><a href="#" data-nav-section="projects">Projects</a></li>
-                            <li><a href="#" data-nav-section="blogs">Publications</a></li>
-                            <li><a href="#" data-nav-section="experience">Research Experience</a></li>
-                            <li><a href="#" data-nav-section="education">Education</a></li>
-                            <li><a href="#" data-nav-section="certification">Certification</a></li>
-                            <li><a href="#" data-nav-section="training">Training</a></li>
-                            <li><a href="#" data-nav-section="contact">Contact</a></li>
-                           
-                        </ul>
-                     </div>
-                    </nav>
-                    
-                     <h4 style="font-size: 15px;" class="btn-info"> <a href="assets/CV.pdf" style="color: black">View Curriculum Vitae</a></h4>
-                     <h4 style="font-size: 15px;" class="btn-info"> <a href="https://fys.kuleuven.be/ster/pub/phd-thesis-princy-ranaivomanana/phd-thesis-with-isbn-princy.pdf" style="color: black">Download PhD Thesis</a></h4>
-                </div>
-            </aside>
-         <div id="colorlib-main">
-            <section class="colorlib-about" data-section="about">
-               <div class="colorlib-narrow-content">
-                  <div class="row animate-box" data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>About</h1>
-                        <div id="bio" class="text-justify">
-                           <p>My name is Princy, and I am originally from Madagascar. I hold a dual PhD in Astronomy and Astrophysics from Radboud University (Netherlands) and KU Leuven (Belgium), with a specialisation in multi-wavelength time-series data analysis and the application of machine learning in stellar astrophysics. I am proficient in Python programming and experienced with deep learning frameworks such as Keras and PyTorch for image classification, time-series characterisation, and clustering. My PhD research focused on advancing our understanding of the formation and evolution of hot and compact evolved stars—also known as hot sub-luminous stars—by leveraging multiband time-series data and machine learning techniques.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!--------------------[END] About me---------------------------->
-            <!--------------------[START] Skills---------------------------->
-            <section class="colorlib-skills" data-section="skills">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Skills</h1>
-                     </div>
-                  </div>
-                  <div id="skills" class="row">
-                  <div class="col-md-6 animate-box fadeInUp animated"><div class="progress-wrap"><h3 class="null">Python programming</h3><div class="progress"><div class="progress-bar color-1" style="width: 90%;"></div></div></div></div><div class="col-md-6 animate-box fadeInUp animated"><div class="progress-wrap"><h3 class="null">Machine learning, Tensorflow, Keras, Pytorch</h3><div class="progress"><div class="progress-bar color-6" style="width: 80%;"></div></div></div></div><div class="col-md-6 animate-box fadeInUp animated"><div class="progress-wrap"><h3 class="null">SQL, ADQL, TAP Query</h3><div class="progress"><div class="progress-bar color-4" style="width: 85%;"></div></div></div></div><div class="col-md-6 animate-box fadeInUp animated"><div class="progress-wrap"><h3 class="null">GitHub</h3><div class="progress"><div class="progress-bar color-7" style="width: 70%;"></div></div></div></div><div class="col-md-6 animate-box fadeInUp animated"><div class="progress-wrap"><h3 class="null">Cloud computing, bash scripting</h3><div class="progress"><div class="progress-bar color-3" style="width: 80%;"></div></div></div></div></div>
-               </div>
-            </section>
-            <!--------------------[END] Skills------------------------------>
-            <!-- <section class="colorlib-profile" data-section="profile-card"> -->
-               <!-- <div class="colorlib-narrow-content"> -->
-                  <!-- <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft"> -->
-                     <!-- <div class="profile-cards"> -->
-                        <!-- <div class="col"> -->
-                           <!-- <div class="github-card" username="rtprincy"></div> -->
-                        <!-- </div> -->
-                     <!-- </div> -->
-                  <!-- </div> -->
-               <!-- </div> -->
-            <!-- </section> -->
-            <!--------------------[START] Projects-------------------------->
-            <section class="colorlib-projects no-print" data-section="projects">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Projects</h1>
-                     </div>
-                  </div>
-                  <ul id="accordion" class="accordion animate-box" data-animate-effect="fadeInLeft">
-                     <li>
-                        <div class="link">
-                           <p style="margin-bottom: 0px">Unsupervised machine learning for time-series characterisation</p>
-                           <i class="fa fa-chevron-down"> </i>
-                        </div>
-                        <ul id="software-projects" class="submenu">
-                        <div class="resume-content" id="lef-div">
-                              <img class="img-fluid" src="images/tsne_components.jpg">
-                        </div>
-                           <div class="project-card">
-                           The aim of this project is to utilise machine learning techniques to identify and characterise the variability of hot subdwarfs (evolved compact stars) observed by the Gaia mission. The t-distributed stochastic neighbour embedding (t-SNE) algorithm was applied to visualise high-dimensional feature space (primarily Gaia DR3 light curve statistical parameters) in a low-dimensional representation, yielding distinctive clusters in the t-SNE 2-D embeddings. The clustering algorithms developed here are both robust in discovering diverse types of new variables and efficient in identifying cataclysmic variables without the need for costly and time-intensive spectroscopic follow-up observations.
-                           <a class="readmore" href="https://arxiv.org/abs/2411.18609" >
-                        <p><span style="color: black">Read more &RightArrow;</span></p>
+<!-- subtle background -->
+<div class="fixed inset-0 opacity-30 pointer-events-none"
+     style="background-image: radial-gradient(circle at 1px 1px, #cbd5e1 1px, transparent 0);
+            background-size: 40px 40px;"></div>
 
-                     </a>
-                        </div>
-                    
-                        </ul>
-                     </li>
+<div class="relative min-h-full">
 
-                     <li>
-                        <div class="link">
-                           <p style="margin-bottom: 0px"> Frequency analysis of sparsely sampled lightcurves
-                           </p>
-                           <i class="fa fa-chevron-down"></i>
-                        </div>
-                        <ul id="software-projects" class="submenu">
-                        <div class="resume-content" id="lef-div">
-                              <img class="img-fluid" src="images/psi_periodogram.png">
-                        </div>
-                        <div class="project-card">
-                        In the analysis of sparsely sampled time-series data, a major challenge is accurately identifying periodic signals. When data is sampled at intervals that do not capture all of the signal's variations, noise and artifacts, known as aliasing frequencies, can arise, complicating the estimation of the true frequency. This project aims to alleviate these challenges by introducing a hybrid approach that combines the power spectrum from the Lomb-Scargle periodogram with the Lafler-Kinman statistic, a technique known as the psi-statistic. The resulting periodogram demonstrates the effectiveness of this method when applied to unevenly sampled light curves from MeerLICHT observations.
-                         <a class="readmore" href="https://arxiv.org/abs/2302.07266" >
-                        <p><span style="color: black">Read more &RightArrow;</span></p>
+<!-- ================= HEADER ================= -->
+<header class="pt-12 pb-10 px-6 text-center">
+  <div class="max-w-4xl mx-auto">
 
-                     </a>
-                        </div>
-                        </ul>
-                     </li>
-                     <!-- <li>
-                        <div class="link">
-                           <p style="margin-bottom: 0px">Android Projects
-                           </p>
-                           <i class="fa fa-chevron-down"></i>
-                        </div>
-                        <ul id="android-projects" class="submenu">
-                        </ul>
-                     </li>
-                     <li>
-                        <div class="link">
-                           <p style="margin-bottom: 0px">Freelance Projects
-                           </p>
-                           <i class="fa fa-chevron-down"></i>
-                        </div>
-                        <ul id="freelance-projects" class="submenu">
-                        </ul>
-                     </li> -->
-                  </ul>
-               </div>
-            </section>
-            <!--------------------[END] Projects---------------------------->
-            <!--------------------[START] Blogs----------------------------->
-            <section class="colorlib-blogs no-print" data-section="blogs">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Recent<span style="color: #f9bf3f">Publications</span>
-                        </h1>
-                     </div>
-                  </div>
-                  <ul id="accordion" class="accordion animate-box" data-animate-effect="fadeInLeft">
-                     <li>
-                     <a class="readmore" href="https://arxiv.org/abs/2411.18609" >
-                        <p>1) Variability in hot sub-luminous stars and binaries: Machine-learning analysis of Gaia DR3 multi-epoch photometry. (2025)&RightArrow; Read more.</p>
-                     </a>
-                     </li>
-  
-                     <li>
-                        <a class="readmore" href="https://arxiv.org/abs/2302.07266" >
-                        <p>2) Identifying and characterising the population of hot sub-luminous stars with multi-colour MeerLICHT data. (2023)&RightArrow; Read more.</p>
-
-                     </a>
-                     </li>
-
-                  </ul>
-               </div>
-            </section>
-            <!--------------------[END] Blogs------------------------------->
-            <!--------------------[START] Work Experience------------------->
-            <section class="colorlib-experience" data-section="experience">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box fadeInLeft animated"
-                     data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Research <span style="color: #f9bf3f">Experience</span>
-                        </h1>
-                     </div>
-                  </div>
-                     <div class="timeline-centered" id="experience">
-                     <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-qrcode"></i></div><div class="timeline-label"><h2>Radboud University (Netherlands) & KU Leuven (Belgium)<span>October 2021 - September 2025</span></h2><span class="timeline-sublabel">PhD candidate</span><p class="timeline-text"> Leveraging multiband time-series data from ground- and space-based telescopes and machine learning methodologies to
-advance the understanding of the formation and evolution of hot subwarf stars</p><div><span class="badge badge-secondary">Time-series Analysis</span><span class="badge badge-secondary">Data Science</span><span class="badge badge-secondary">Machine Learning</span><span class="badge badge-secondary">SQL</span></div></div></div></article>
-                 
-
-<article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-group"></i></div><div class="timeline-label"><h2>Radboud University (Netherlands) & KU Leuven (Belgium)<span>October 2021 - 2023</span></h2><span class="timeline-sublabel">Teaching Assistantship:</span>
-   <p style="margin-bottom: 0px"> * Courses: Astronomical Instrumentation and Data Analysis (Radboud University)</p>
-   <p class="timeline-text"> * Bachelor projects supervision (KU Leuven)</p>
-   <div>
-<span class="badge badge-secondary">Observational Astronomy</span><span class="badge badge-secondary">Photometry</span><span class="badge badge-secondary">ds9</span><span class="badge badge-secondary">TOPCAT</span><span class="badge badge-secondary">SourceExtractor</span></div></div></div></article>  
+<div class="w-64 h-64 mx-auto mb-6 rounded-full overflow-hidden shadow-xl ring-4 ring-white">
+  <img src="images/Profile.jpg" alt="Dr. Princy Ranaivomanana" class="w-full h-full object-cover">
+</div>
 
 
-<article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-qrcode"></i></div><div class="timeline-label"><h2>University of Manchester<span> 2020 - 2021</span></h2><span class="timeline-sublabel">Master Research (MPhil)</span><p class="timeline-text"> Semi-supervised generative adversarial network (SGAN) for pulsar synthetic image generation and classification.</p><div><span class="badge badge-secondary">Computer Vision</span><span class="badge badge-secondary">Genarative AI</span><span class="badge badge-secondary">PyTorch</span><span class="badge badge-secondary">Python</span></div></div></div></article>
+    <h1 class="font-display text-4xl md:text-5xl font-bold gradient-text mb-3">
+      Dr. Princy Ranaivomanana
+    </h1>
 
-  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-qrcode"></i></div><div class="timeline-label"><h2>University of Antananarivo<span> 2016 - 2017</span></h2><span class="timeline-sublabel">Master Project</span><p class="timeline-text"> Formation and evolution of young massive clusters in interacting galaxies</p><div><span class="badge badge-secondary">IRAF</span><span class="badge badge-secondary">ds9</span><span class="badge badge-secondary">TOPCAT</span><span class="badge badge-secondary">Python</span><span class="badge badge-secondary">Bash Script</span></div></div></div></article>
-         
-                     </div>
-               </div>
-            </section>
+    <p class="text-xl text-slate-600 font-medium mb-4">
+      Astronomer • Data science enthusiast
+    </p>
 
-            <!--------------------[END] Work Experience--------------------->
-            <!--------------------[START] Education------------------------->
-<section class="colorlib-education" data-section="education">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Education</h1>
-                     </div>
-                  </div>
-                  <div class="timeline-centered" id="education">
+    <p class="text-slate-500 max-w-2xl mx-auto leading-relaxed mb-4">
 
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>PhD in Astronomy<span>10/2021 - 09/2025</span></h2><span class="timeline-sublabel">Radboud University - KU Leuven </span><div><span class="badge badge-secondary">Time-series analysis</span><span class="badge badge-secondary">unsupervised machine learning</span><span class="badge badge-secondary">Dimensionality reduction</span><span class="badge badge-secondary">Python</span></div></div></div></article>
+Hey! my name is Princy and I'm originally from Madagascar. 
+    </p>
+     <p class="text-slate-600 leading-relaxed mb-4">
+      Understanding complex data to enable reliable scientific conclusions is what drives my work.
+     </p> 
+     <p class="text-slate-600 leading-relaxed mb-4">
+      I am an astronomer and data science enthusiast with a dual PhD in Astronomy & Astrophysics (Radboud University & KU Leuven), specialising in time-series analysis, unsupervised machine learning, and statistical validation of large, heterogeneous datasets.
+     </p> 
 
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>MPhil in Astronomy<span>2020 - 2021</span></h2><span class="timeline-sublabel">University of Manchester, UK</span><div><span class="badge badge-secondary">Computer Vision</span><span class="badge badge-secondary">Generative AI</span><span class="badge badge-secondary">Pytorch</span><span class="badge badge-secondary">Python</span></div></div></div></article>
+    <!-- CTA -->
+    <div class="mt-6 flex justify-center gap-5 text-sm text-slate-600">
+      <a href="https://orcid.org/0000-0001-8470-0220"
+         target="_blank"
+         class="flex items-center gap-2 hover:text-slate-900 transition">
+        <span class="w-6 h-6 rounded-full bg-emerald-600 text-white text-xs flex items-center justify-center font-semibold">
+          iD
+        </span>
+        ORCID
+      </a>
 
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>MSc in Astronomy<span>2015 - 2017</span></h2><span class="timeline-sublabel">University of Antananarivo, Madagascar</span><div><span class="badge badge-secondary">IRAF</span><span class="badge badge-secondary">ds9</span><span class="badge badge-secondary">TOPCAT</span></div></div></div></article>
+      <a href="https://scholar.google.com/citations?user=-GtGroYAAAAJ&hl=en"
+         target="_blank"
+         class="flex items-center gap-2 hover:text-slate-900 transition">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0L1.6 9.2l1.7 1.3L12 3.6l8.7 6.9 1.7-1.3z"/>
+          <path d="M5 10v9h14v-9l-7 5z"/>
+        </svg>
+        Google Scholar
+      </a>
 
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>BSc in Physics<span>2011-2015</span></h2><span class="timeline-sublabel">University of Antananarivo, Madagascar</span><div><span class="badge badge-secondary">Physics</span><span class="badge badge-secondary">Maths</span><span class="badge badge-secondary">Programming languages</span></div></div></div></article><article class="timeline-entry begin animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"></div></div></article>
+      <a href="https://github.com/rtprincy/" class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:shadow-lg transition-shadow" aria-label="GitHub">
+        <svg class="w-5 h-5 text-slate-700" fill="currentColor" viewbox="0 0 24 24">
+         <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg></a>
 
-               </div>
-               </div>
-            </section>
-            <!--------------------[END] Education--------------------------->
-            <!--------------------[START] Certification------------------------->
-<section class="colorlib-training" data-section="certification">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Certification</h1>
-                     </div>
-                  </div>
-                  <div class="timeline-centered">
+<a href="https://www.linkedin.com/in/rtprincy/" class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:shadow-lg transition-shadow" aria-label="LinkedIn">
+        <svg class="w-5 h-5 text-slate-700" fill="currentColor" viewbox="0 0 24 24">
+         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+      </a>
+    </div>
+    <div class="mt-7 flex justify-center gap-4">
+      <a href="assets/CV.pdf"
+         class="px-5 py-2 rounded-lg bg-slate-800 text-white text-sm font-medium hover:bg-slate-700 transition">
+        Download CV
+      </a>
+      <a href="mailto:rtprincy@gmail.com"
+         class="px-5 py-2 rounded-lg border border-slate-300 text-slate-700 text-sm hover:bg-slate-100 transition">
+        Contact
+      </a>
+    </div>
+  </div>
+</header>
 
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>Oxford machine learning school (OxML 2025)</h2><a href="https://elandi.ai/certificates/ee866fdb-dff5-4d04-842a-5b850f2b483b">Online certificate</a></article>
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>Oxford machine learning school (OxML 2023)</h2><a href="assets/OxML2023_Certt_Tahina_Princy_Ranaivomanana.pdf">View certificate</a></article>
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>Advanced Machine Learning and Signal Processing (IBM Skills Network)</h2><a href="https://www.coursera.org/account/accomplishments/verify/B6YGY6SFGGPH">Online certificate</a></article>
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>Data Analysis with Python (IBM Skills Network)</h2><a href="https://www.coursera.org/account/accomplishments/verify/WN3VLCRPS4Y8">Online certificate</a></article>
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>Exploratory Data Analysis for Machine Learning (IBM Skills Network)</h2><a href="https://www.coursera.org/account/accomplishments/verify/PPM9BZKRVAFG">Online certificate</a></article>
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>Education in a Nutshell (Radboud University Teaching course)</h2><a href="assets/Certificaat_EIN_Princy_Ranaivomanana.pdf">View certificate</a></article>
-               </div>
-               </div>
-            </section>
-            <!--------------------[END] Certification-------------------------->
-            <!--------------------[START] Training------------------------->
-<section class="colorlib-training" data-section="training">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Training</h1>
-                     </div>
-                  </div>
-                  <div class="timeline-centered">
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>Innovation and entrepreneurship training programme<span>2024</span></h2><span class="timeline-sublabel">Provided by NOVA-SKIES (Skilled, Innovative and Entrepreneurial Scientists) programme, Netherlands </span><p>The NOVA-SKIES programme offers training in both soft and hard skills, fosters innovation and entrepreneurship, and opens career opportunities for early-career researchers, including PhD candidates and postdocs, in the field of astronomy in the Netherlands. The programme consists of a 2-day training course and a 6-month mentoring programme.</p>
-                  <div><span class="badge badge-secondary">Business Canvas Model</span><span class="badge badge-secondary">Entrepreneurship</span><span class="badge badge-secondary"> Skills transfer</span></div></div></div></article>
-                  <article class="timeline-entry animate-box fadeInUp animated"><div class="timeline-entry-inner"><div class="timeline-icon color-2"><i class="fa fa-graduation-cap"></i></div><div class="timeline-label"><h2>Development in Africa with Radio Astronomy (DARA) basic training programme<span>2017 - 2018</span></h2><span class="timeline-sublabel">University of Antananarivo, HartRAO Observatory</span><div><span class="badge badge-secondary">Interferometry</span><span class="badge badge-secondary">CASA</span><span class="badge badge-secondary">Data Calibration</span><span class="badge badge-secondary">Imaging</span></div></div></div></article>
-               </div>
-               </div>
-            </section>
-            <!--------------------[END] Training-------------------------->
-            <!--------------------[START] Contact--------------------------->
-            <section class="colorlib-contact" data-section="contact">
-               <div class="colorlib-narrow-content">
-                  <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                     <div class="about-desc">
-                        <h1>Contact</h1>
-                     </div>
-                     <p>If you'd like to get in touch, feel free to reach me via email or social media.
-                     </p>
-                  </div>
-               </div>
-            </section>
-            <!--------------------[END] Contact----------------------------->
-            <!--------------------[START] Footer---------------------------->
-            <section class="colorlib-footer no-print" data-section="footer">
-               <div class="colorlib-narrow-content">
-                  <footer class="footer colorlib-footer2" id="footer">
-                  <p><img src="icons/mail.png" alt="mail icon" width="24"> <a href="mailto:princy.ranaivomanana@ru.nl">princy.ranaivomanana@ru.nl</a><span> </span>
-                  <img src="icons/linkedin.png" alt="linkedin icon" width="24"> <a href="https://linkedin.com/in/rtprincy">rtprincy</a><span> </span>
-                  <img src="icons/github.png" alt="github icon" width="24"> <a href="https://github.com/rtprincy">rtprincy</a>
-               </p>
-                  </footer>
-               </div>
-            </section>
-            <!--------------------[END] Footer------------------------------>
-         </div>
-         <!-----[END] Main Page--------->
+<!-- ========== RESEARCH SNAPSHOT ========== -->
+<section class="px-6 pb-10">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-4 gap-6 text-center">
+    <div class="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+      <p class="text-3xl font-display font-semibold" id="citations">—</p>
+      <p class="text-sm text-slate-500 mt-1">Citations</p>
+    </div>
+    <div class="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+      <p class="text-3xl font-display font-semibold">5+</p>
+      <p class="text-sm text-slate-500 mt-1">Peer-reviewed papers</p>
+    </div>
+    <div class="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+      <p class="text-3xl font-display font-semibold">4+ yrs</p>
+      <p class="text-sm text-slate-500 mt-1">Research experience</p>
+    </div>
+    <div class="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+      <p class="text-3xl font-display font-semibold">ML & Time-Series</p>
+      <p class="text-sm text-slate-500 mt-1">Core expertise</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NAV ================= -->
+<nav class="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-slate-200">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="relative flex">
+
+      <button data-tab="publications" class="tab-btn flex-1 py-4 font-medium text-slate-900">📄 Publications</button>
+      <button data-tab="conferences"  class="tab-btn flex-1 py-4 font-medium text-slate-500">🎤 Conferences</button>
+      <button data-tab="codes"        class="tab-btn flex-1 py-4 font-medium text-slate-500">💻 Code</button>
+      <button data-tab="projects"     class="tab-btn flex-1 py-4 font-medium text-slate-500">🔬 PhD Projects</button>
+      <button data-tab="certifications" class="tab-btn flex-1 py-4 font-medium text-slate-500">📜 Certifications</button>
+
+
+      <div class="tab-indicator absolute bottom-0 h-0.5 bg-slate-800 w-1/5"></div>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= CONTENT ================= -->
+<main class="max-w-4xl mx-auto px-4 py-10 pb-20">
+<!-- Publications -->
+<section id="content-publications" class="tab-content">
+  <div class="flex justify-end mb-4">
+  <button
+    id="bibtex-export"
+    class="px-4 py-2 text-sm rounded-lg border border-slate-300 hover:bg-slate-100 transition"
+  >
+    Export BibTeX
+  </button>
+</div>
+  <div id="publications-list" class="space-y-4">
+    <p class="text-slate-500 text-sm">Loading publications from ORCID…</p>
+  </div>
+</section>
+<!-- <section id="content-publications" class="tab-content">
+  <div class="space-y-4">
+    <article class="card bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+      <h3 class="font-semibold">
+        Asteroseismology of Hot Subdwarfs with Space Photometry
+      </h3>
+      <p class="text-sm text-slate-600 mt-1"><em>Astronomy & Astrophysics</em>, 2024</p>
+      <p class="text-sm text-slate-500 mt-2">
+        Developed robust time-series models to characterize pulsation modes
+        using long-baseline space photometry.
+      </p>
+      <div class="mt-3 flex gap-4 text-sm">
+        <a href="https://orcid.org/0000-0002-XXXX-XXXX"
+           target="_blank"
+           class="hover:underline">
+          ORCID Record
+        </a>
+        <a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...XXX"
+           target="_blank"
+           class="hover:underline">
+          ADS
+        </a>
+        <a href="https://arxiv.org/abs/XXXX.XXXXX"
+           target="_blank"
+           class="hover:underline">
+          arXiv
+        </a>
       </div>
-   </div>
-   <!-- jQuery -->
-   <script src="js/jquery.min.js"></script>
-   <!-- jQuery Easing -->
-   <script src="js/jquery.easing.1.3.js"></script>
-   <!-- Bootstrap -->
-   <script src="js/bootstrap.min.js"></script>
-   <!-- Waypoints -->
-   <script src="js/jquery.waypoints.min.js"></script>
-   <!-- Flexslider -->
-   <script src="js/jquery.flexslider-min.js"></script>
-   <!-- Counters -->
-   <script src="js/jquery.countTo.js"></script>
-   <!-- MAIN JS -->
-   <script src="js/main.js"></script>
-</body>
+    </article>
+  </div>
+  <div class="mt-8 border-t border-slate-200 pt-6">
+  <h4 class="font-semibold text-slate-700 mb-3">
+    Academic Profiles
+  </h4>
+  <ul class="space-y-2 text-sm">
+    <li>
+      <a href="https://orcid.org/0000-0002-XXXX-XXXX"
+         class="hover:underline">
+        ORCID: 0000-0002-XXXX-XXXX
+      </a>
+    </li>
+    <li>
+      <a href="https://scholar.google.com/citations?user=XXXXXXXX"
+         class="hover:underline">
+        Google Scholar Profile
+      </a>
+    </li>
+    <li>
+      <a href="https://ui.adsabs.harvard.edu/"
+         class="hover:underline">
+        NASA ADS
+      </a>
+    </li>
+  </ul>
+</div>
+</section> -->
 
+<!-- Conferences -->
+<section id="content-conferences" class="tab-content hidden space-y-8">
+
+  <!-- Invited Speaker -->
+  <div>
+    <h2 class="text-lg font-semibold text-slate-800 mb-3">
+      Invited Speaker
+    </h2>
+
+    <article class="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+      <p class="font-medium text-slate-800">
+        Hamburg Observatory Colloquium
+        <span class="float-right text-slate-500">2025</span>
+      </p>
+      <p class="text-sm text-slate-600 mt-1">
+        <em>Invited talk:</em> Unsupervised machine learning for variability analysis in time-domain astronomy
+      </p>
+    </article>
+  </div>
+
+  <!-- Talks -->
+  <div>
+    <h2 class="text-lg font-semibold text-slate-800 mb-3">
+      Talks
+    </h2>
+
+    <div class="space-y-4">
+      <article class="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+        <p class="font-medium text-slate-800">
+          12th International Meeting on Hot Subdwarfs &amp; Related Objects — North Carolina, USA
+          <span class="float-right text-slate-500">2025</span>
+        </p>
+        <p class="text-sm text-slate-600 mt-1">
+          <em>Talk:</em> Unravelling Hot Subdwarfs and Binaries Variability with Gaia DR3 and Machine Learning
+        </p>
+      </article>
+
+      <article class="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+        <p class="font-medium text-slate-800">
+          KOPAL 2024 Conference (Flash Talk) — Litomyšl, Czech Republic
+          <span class="float-right text-slate-500">2024</span>
+        </p>
+      </article>
+
+      <article class="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+        <p class="font-medium text-slate-800">
+          MW-Gaia WG2 Conference — Sofia, Bulgaria
+          <span class="float-right text-slate-500">2023</span>
+        </p>
+        <p class="text-sm text-slate-600 mt-1">
+          <em>Talk:</em> Classification of variable stars observed in multiple filters with MeerLICHT and BlackGEM
+        </p>
+      </article>
+    </div>
+  </div>
+
+  <!-- Posters -->
+  <div>
+    <h2 class="text-lg font-semibold text-slate-800 mb-3">
+      Posters
+    </h2>
+
+    <div class="space-y-3 text-slate-700 text-sm">
+      <p>
+        TASC/KASC 15 Conference — Porto, Portugal
+        <span class="float-right text-slate-500">2024</span>
+      </p>
+      <p>
+        AM CVn 5 Workshop — Armagh, UK
+        <span class="float-right text-slate-500">2023</span>
+      </p>
+      <p>
+        sdOB11 Conference — Armagh, UK
+        <span class="float-right text-slate-500">2023</span>
+      </p>
+      <p>
+        TASC/KASC 13 Conference — Leuven, Belgium
+        <span class="float-right text-slate-500">2022</span>
+      </p>
+      <p>
+        sdOB10 Conference — Liège, Belgium
+        <span class="float-right text-slate-500">2022</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Machine Learning -->
+  <div>
+    <h2 class="text-lg font-semibold text-slate-800 mb-3">
+      Machine Learning Conferences &amp; Schools
+    </h2>
+
+    <article class="bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+      <p class="font-medium text-slate-800">
+        Oxford Machine Learning School (OxML) — Oxford, UK
+      </p>
+      <p class="text-sm text-slate-600 mt-1">
+        Attendee
+        <span class="float-right text-slate-500">2023 &amp; 2025</span>
+      </p>
+    </article>
+  </div>
+
+</section>
+
+
+<!-- Code -->
+<section id="content-codes" class="tab-content hidden grid md:grid-cols-1 gap-4">
+    <div id="github-repos" class="space-y-4">
+    <p class="text-slate-500 text-sm">Loading GitHub repositories…</p>
+  </div>
+</section> 
+
+<!-- <section id="content-code" class="tab-content hidden">
+  <div id="github-repos" class="space-y-4">
+    <p class="text-slate-500 text-sm">Loading GitHub repositories…</p>
+  </div>
+</section> -->
+
+<!-- Projects -->
+<section id="content-projects" class="tab-content hidden space-y-6">
+
+  <!-- Research Overview -->
+  <article class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+    <h3 class="font-display text-xl font-semibold mb-3">
+      Research Background
+    </h3>
+
+    <p class="text-slate-600 leading-relaxed mb-4">
+      My research focuses on advancing our understanding of the formation and evolution
+      of hot sub-luminous stars — compact, evolved stellar objects — by studying their
+      photometric variability using multi-band time-series data and modern machine
+      learning techniques.
+    </p>
+
+    <p class="text-slate-600 leading-relaxed mb-4">
+      Time-domain astronomy poses significant observational challenges: data are often
+      sparse, irregularly sampled, and affected by gaps due to weather, telescope
+      availability, and the day–night cycle. These limitations lead to large uncertainties
+      in fundamental parameters such as periods and amplitudes, motivating the
+      development of robust statistical and computational tools.
+    </p>
+
+    <p class="text-slate-600 leading-relaxed">
+      To this end, my PhD introduces statistical and machine learning methods that efficiently handle unevenly sampled light curves of an impressively large number of stars. Simultaneously, it contributes to the understanding of the formation and evolution of compact evolved stars, which display photometric variability.
+    </p>
+  </article>
+
+  <!-- Contribution 1 -->
+  <article class="card bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+    <h3 class="font-semibold text-lg mb-2">
+      Hybrid Frequency Search for Irregular Light Curves
+    </h3>
+    <p class="text-slate-600 leading-relaxed">
+      I developed hybrid frequency-search methods (the
+      <span class="font-medium">Ψ-statistic</span>) that combine the Lomb–Scargle
+      periodogram with the Lafler–Kinman statistic to improve periodicity detection
+      in sparsely and irregularly sampled light curves.
+    </p>
+    <p class="text-slate-600 leading-relaxed mt-2">
+      These tools were successfully applied to MeerLICHT, BlackGEM, and Gaia datasets,
+      demonstrating improved robustness and reduced aliasing compared to classical
+      approaches.
+    </p>
+  </article>
+
+  <!-- Contribution 2 -->
+  <article class="card bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+    <h3 class="font-semibold text-lg mb-2">
+      Unsupervised Learning for Variability Discovery
+    </h3>
+    <p class="text-slate-600 leading-relaxed">
+      I designed an unsupervised machine learning framework using t-SNE and UMAP applied
+      to Gaia DR3 multi-epoch photometry. Using statistical features extracted from light
+      curves, this approach enables the discovery and separation of variable stellar
+      populations without relying on labelled training data.
+    </p>
+    <p class="text-slate-600 leading-relaxed mt-2">
+      The method successfully disentangled variable hot subdwarfs from cataclysmic
+      variables — two classes notoriously difficult to separate photometrically —
+      highlighting the power of unsupervised learning in large astronomical surveys.
+    </p>
+  </article>
+
+  <!-- Contribution 3 -->
+  <article class="card bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+    <h3 class="font-semibold text-lg mb-2">
+      Scalability to Large and Heterogeneous Stellar Populations
+    </h3>
+    <p class="text-slate-600 leading-relaxed">
+      I extended the unsupervised framework to significantly larger datasets
+      (≈13,500 objects), spanning diverse stellar populations between the main sequence
+      and white dwarf sequence in the colour–magnitude diagram.
+    </p>
+    <p class="text-slate-600 leading-relaxed mt-2">
+      The resulting embeddings revealed distinct clusters corresponding to different
+      stellar variability classes, demonstrating strong scalability and applicability
+      to upcoming large-scale time-domain surveys.
+    </p>
+  </article>
+
+  <!-- Contribution 4 -->
+  <article class="card bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+    <h3 class="font-semibold text-lg mb-2">
+      Pulsation Mode Identification with BlackGEM
+    </h3>
+    <p class="text-slate-600 leading-relaxed">
+      In a recent project, I investigated BlackGEM’s capability to detect multi-periodic
+      pulsations using simultaneous three-band photometry (<em>u</em>, <em>q</em>,
+      <em>i</em>).
+    </p>
+    <p class="text-slate-600 leading-relaxed mt-2">
+      I developed a proof-of-concept method for pulsation mode identification based on
+      amplitude ratios, demonstrated using the benchmark hot pre-white dwarf
+      PG1159–035, with promising agreement with modes known from the literature.
+    </p>
+  </article>
+
+  <!-- Closing -->
+  <article class="bg-slate-50 rounded-xl p-6 border border-slate-200">
+    <p class="text-slate-700 font-medium">
+      Together, these projects highlight my dual expertise in statistical time-series
+      analysis and machine learning applied to large, heterogeneous astronomical datasets.
+    </p>
+  </article>
+
+</section>
+
+<!-- Teaching -->
+<!-- Certifications -->
+<section id="content-certifications" class="tab-content hidden space-y-4">
+
+  <article class="card bg-white rounded-xl p-5 shadow-sm border border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <!-- Coursera logo -->
+      <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" alt="Coursera" class="w-10 h-10 rounded-full">
+      <div>
+        <h3 class="font-semibold text-lg">Generative AI: Foundation Models and Platforms</h3>
+        <p class="text-sm text-slate-500">Coursera • IBM</p>
+      </div>
+    </div>
+    <div class="flex gap-3 text-sm">
+      <a href="https://www.coursera.org/account/accomplishments/verify/4HO3WVCQ5VG1" target="_blank" class="px-3 py-1 bg-slate-800 text-white rounded hover:bg-slate-700 transition">
+        View Certificate
+      </a>
+      <a href="https://www.coursera.org/learner/princy-tahina" target="_blank" class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-50 transition">
+        Coursera Profile
+      </a>
+    </div>
+  </article>
+
+  <article class="card bg-white rounded-xl p-5 shadow-sm border border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" alt="Coursera" class="w-10 h-10 rounded-full">
+      <div>
+        <h3 class="font-semibold text-lg">Advanced Machine Learning and Signal Processing</h3>
+        <p class="text-sm text-slate-500">Coursera • IBM</p>
+      </div>
+    </div>
+    <div class="flex gap-3 text-sm">
+      <a href="https://www.coursera.org/account/accomplishments/verify/B6YGY6SFGGPH" target="_blank" class="px-3 py-1 bg-slate-800 text-white rounded hover:bg-slate-700 transition">
+        View Certificate
+      </a>
+      <a href="https://www.coursera.org/learner/princy-tahina" target="_blank" class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-50 transition">
+        Coursera Profile
+      </a>
+    </div>
+  </article>
+
+  <article class="card bg-white rounded-xl p-5 shadow-sm border border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" alt="Coursera" class="w-10 h-10 rounded-full">
+      <div>
+        <h3 class="font-semibold text-lg">Exploratory Data Analysis for Machine Learning</h3>
+        <p class="text-sm text-slate-500">Coursera • IBM</p>
+      </div>
+    </div>
+    <div class="flex gap-3 text-sm">
+      <a href="https://www.coursera.org/account/accomplishments/verify/PPM9BZKRVAFG" target="_blank" class="px-3 py-1 bg-slate-800 text-white rounded hover:bg-slate-700 transition">
+        View Certificate
+      </a>
+      <a href="https://www.coursera.org/learner/princy-tahina" target="_blank" class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-50 transition">
+        Coursera Profile
+      </a>
+    </div>
+  </article>
+
+    <article class="card bg-white rounded-xl p-5 shadow-sm border border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" alt="Coursera" class="w-10 h-10 rounded-full">
+      <div>
+        <h3 class="font-semibold text-lg">Data Analysis with Python</h3>
+        <p class="text-sm text-slate-500">Coursera • IBM</p>
+      </div>
+    </div>
+    <div class="flex gap-3 text-sm">
+      <a href="https://www.coursera.org/account/accomplishments/verify/WN3VLCRPS4Y8" target="_blank" class="px-3 py-1 bg-slate-800 text-white rounded hover:bg-slate-700 transition">
+        View Certificate
+      </a>
+      <a href="https://www.coursera.org/learner/princy-tahina" target="_blank" class="px-3 py-1 border border-slate-300 rounded hover:bg-slate-50 transition">
+        Coursera Profile
+      </a>
+    </div>
+  </article>
+
+  <!-- Add more certificates here with the same layout -->
+
+</section>
+
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="border-t border-slate-200 bg-white/60 backdrop-blur py-6 text-center">
+  <p class="text-sm text-slate-500">
+    © 2026 Dr. Princy Ranaivomanana • Academic Portfolio
+  </p>
+</footer>
+
+</div>
+
+<!-- ================= JS ================= -->
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+  const indicator = document.querySelector('.tab-indicator');
+  const contents = document.querySelectorAll('.tab-content');
+
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.replace('text-slate-900','text-slate-500'));
+      tab.classList.replace('text-slate-500','text-slate-900');
+
+      indicator.style.transform = `translateX(${i * 100}%)`;
+
+      contents.forEach(c => c.classList.add('hidden'));
+      document.getElementById(`content-${tab.dataset.tab}`).classList.remove('hidden');
+    });
+  });
+</script>
+<script>
+  /* ===== Academic Metrics Configuration ===== */
+  const academicMetrics = {
+    citations: 75,
+    hIndex: 4,
+    i10Index: 2
+  };
+
+  document.getElementById("citations").textContent =
+    academicMetrics.citations.toLocaleString();
+</script>
+<script>
+  /* ========= ORCID CONFIG ========= */
+  let ORCID_PUBLICATIONS = [];
+
+  const ORCID_ID = "0000-0001-8470-0220"; // ← replace
+  const ORCID_API =
+    `https://pub.orcid.org/v3.0/${ORCID_ID}/works`;
+
+  const publicationsContainer =
+    document.getElementById("publications-list");
+
+  async function fetchORCIDPublications() {
+    try {
+      const response = await fetch(ORCID_API, {
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error("ORCID request failed");
+      }
+
+      const data = await response.json();
+      const works = data.group || [];
+
+      if (works.length === 0) {
+        publicationsContainer.innerHTML =
+          "<p class='text-slate-500'>No publications found.</p>";
+        return;
+      }
+
+      // Parse and normalize
+      const publications = works.map(group => {
+        const work = group["work-summary"][0];
+
+        const title =
+          work.title?.title?.value || "Untitled work";
+
+        const year =
+          work["publication-date"]?.year?.value || "—";
+
+        const journal =
+          work["journal-title"]?.value || "";
+
+        const externalIds = work["external-ids"]?.["external-id"] || [];
+
+        let doi = null;
+        externalIds.forEach(id => {
+          if (id["external-id-type"] === "doi") {
+            doi = id["external-id-value"];
+          }
+        });
+
+        return {
+          title,
+          year,
+          journal,
+          doi,
+          orcidUrl: work["url"]?.value || `https://orcid.org/${ORCID_ID}`
+        };
+      });
+
+      // Sort by year (desc)
+      publications.sort((a, b) => (b.year || 0) - (a.year || 0));
+
+      ORCID_PUBLICATIONS = publications;
+      renderPublications(publications);
+
+
+    } catch (error) {
+      publicationsContainer.innerHTML = `
+        <p class="text-slate-500 text-sm">
+          Unable to load publications from ORCID.
+          <a href="https://orcid.org/${ORCID_ID}" class="underline">
+            View ORCID profile
+          </a>
+        </p>`;
+      console.error(error);
+    }
+  }
+
+  function renderPublications(publications) {
+    publicationsContainer.innerHTML = "";
+
+    publications.forEach(pub => {
+      const article = document.createElement("article");
+      article.className =
+        "card bg-white rounded-xl p-5 shadow-sm border border-slate-100";
+
+      article.innerHTML = `
+        <h3 class="font-semibold text-slate-800">
+          ${pub.title}
+        </h3>
+
+        <p class="text-sm text-slate-600 mt-1">
+          ${pub.journal ? `<em>${pub.journal}</em>, ` : ""}${pub.year}
+        </p>
+
+        <div class="mt-3 flex gap-4 text-sm">
+          ${pub.doi
+            ? `<a href="https://doi.org/${pub.doi}" target="_blank" class="hover:underline">
+                 DOI
+               </a>`
+            : ""
+          }
+          <a href="${pub.orcidUrl}" target="_blank" class="hover:underline">
+            ORCID
+          </a>
+        </div>
+      `;
+
+      publicationsContainer.appendChild(article);
+    });
+  }
+
+  fetchORCIDPublications();
+</script>
+<script>
+  const exportBtn = document.getElementById("bibtex-export");
+
+  function slugify(text) {
+    return text
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "")
+      .substring(0, 20);
+  }
+
+  function generateBibTeX(publications) {
+    return publications.map(pub => {
+      const key =
+        `author${pub.year}${slugify(pub.title)}`;
+
+      return `
+@article{${key},
+  title   = {${pub.title}},
+  year    = {${pub.year}},
+  journal = {${pub.journal || "Unknown"}},
+  ${pub.doi ? `doi     = {${pub.doi}},` : ""}
+  url     = {${pub.orcidUrl}}
+}`.trim();
+    }).join("\n\n");
+  }
+
+  function downloadBibTeX(content) {
+    const blob = new Blob([content], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "publications.bib";
+    a.click();
+
+    URL.revokeObjectURL(url);
+  }
+
+  exportBtn.addEventListener("click", () => {
+    if (!ORCID_PUBLICATIONS.length) {
+      alert("No publications available for export.");
+      return;
+    }
+
+    const bibtex = generateBibTeX(ORCID_PUBLICATIONS);
+    downloadBibTeX(bibtex);
+  });
+</script>
+<script>
+  function slugify(text) {
+    return text
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "")
+      .substring(0, 20);
+  }
+
+  function generateSingleBibTeX(pub) {
+    const key =
+      `author${pub.year}${slugify(pub.title)}`;
+
+    return `
+@article{${key},
+  title   = {${pub.title}},
+  year    = {${pub.year}},
+  journal = {${pub.journal || "Unknown"}},
+  ${pub.doi ? `doi     = {${pub.doi}},` : ""}
+  url     = {${pub.orcidUrl}}
+}`.trim();
+  }
+
+  function downloadBibTeX(content, filename) {
+    const blob = new Blob([content], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.click();
+
+    URL.revokeObjectURL(url);
+  }
+</script>
+<script>
+  /* ========= GITHUB CONFIG ========= */
+  const GITHUB_USERNAME = "rtprincy"; // ← replace
+  const GITHUB_API =
+    `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=100`;
+
+  const repoContainer = document.getElementById("github-repos");
+
+  async function fetchGitHubRepos() {
+    try {
+      const response = await fetch(GITHUB_API);
+
+      if (!response.ok) {
+        throw new Error("GitHub API error");
+      }
+
+      const repos = await response.json();
+
+      if (!repos.length) {
+        repoContainer.innerHTML =
+          "<p class='text-slate-500'>No repositories found.</p>";
+        return;
+      }
+
+      renderRepos(repos);
+    } catch (error) {
+      repoContainer.innerHTML = `
+        <p class="text-slate-500 text-sm">
+          Unable to load repositories.
+          <a href="https://github.com/${GITHUB_USERNAME}" class="underline">
+            View GitHub profile
+          </a>
+        </p>`;
+      console.error(error);
+    }
+  }
+
+  function renderRepos(repos) {
+    repoContainer.innerHTML = "";
+
+    repos.forEach(repo => {
+      const card = document.createElement("article");
+      card.className =
+        "bg-white rounded-xl p-5 shadow-sm border border-slate-100";
+
+      card.innerHTML = `
+        <h3 class="font-semibold text-slate-800">
+          <a href="${repo.html_url}" target="_blank" class="hover:underline">
+            ${repo.name}
+          </a>
+        </h3>
+
+        <p class="text-sm text-slate-600 mt-1">
+          ${repo.description || "No description provided."}
+        </p>
+
+        <div class="mt-3 flex gap-4 text-sm text-slate-500">
+          ${repo.language ? `<span>${repo.language}</span>` : ""}
+          <span>★ ${repo.stargazers_count}</span>
+          <span>Updated ${new Date(repo.updated_at).toLocaleDateString()}</span>
+        </div>
+      `;
+
+      repoContainer.appendChild(card);
+    });
+  }
+
+  fetchGitHubRepos();
+</script>
+</body>
 </html>
