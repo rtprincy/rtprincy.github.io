@@ -47,6 +47,13 @@
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
   </style>
 </head>
 
@@ -157,11 +164,11 @@ Hey! my name is Princy and I'm originally from Madagascar.
 <!-- ================= NAV ================= -->
 <nav class="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-slate-200">
   <div class="max-w-4xl mx-auto px-4">
-    <div class="relative flex">
+    <div class="relative flex overflow-x-auto no-scrollbar">
 
       <button data-tab="publications" class="tab-btn flex-1 py-4 font-medium text-slate-900">📄 Publications</button>
       <button data-tab="conferences"  class="tab-btn flex-1 py-4 font-medium text-slate-500">🎤 Conferences</button>
-      <button data-tab="codes"        class="tab-btn flex-1 py-4 font-medium text-slate-500">💻 Code</button>
+      <button data-tab="codes"        class="tab-btn flex-1 py-4 font-medium text-slate-500">💻 Codes</button>
       <button data-tab="projects"     class="tab-btn flex-1 py-4 font-medium text-slate-500">🔬 PhD Projects</button>
       <button data-tab="certifications" class="tab-btn flex-1 py-4 font-medium text-slate-500">📜 Certifications</button>
 
