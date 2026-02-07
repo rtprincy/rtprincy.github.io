@@ -1,1 +1,1 @@
-This page is under active developments.
+This is my personal webpage.
