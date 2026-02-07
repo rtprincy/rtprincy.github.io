@@ -48,12 +48,12 @@
   transition: transform 0.3s ease;
 }
 .no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
-}
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
   </style>
 </head>
 
@@ -164,16 +164,38 @@ Hey! my name is Princy and I'm originally from Madagascar.
 <!-- ================= NAV ================= -->
 <nav class="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-slate-200">
   <div class="max-w-4xl mx-auto px-4">
-    <div class="relative flex overflow-x-auto no-scrollbar sm:flex-row">
+<div id="tab-container"
+     class="relative flex overflow-x-auto no-scrollbar border-b border-slate-200">
+     
+  <button data-tab="content-publications"
+          class="tab-btn flex-1 py-3 px-4 md:py-4 md:px-6 font-medium text-slate-500">
+    📄 Publications
+  </button>
 
-      <button data-tab="publications" class="tab-btn flex-1 py-3 px-4 md:py-4 md:px-6 font-medium text-slate-500">📄 Publications</button>
-      <button data-tab="conferences"  class="tab-btn flex-1 py-3 px-4 md:py-4 md:px-6 font-medium text-slate-500">🎤 Conferences</button>
-      <button data-tab="codes"        class="tab-btn flex-1 py-3 px-4 md:py-4 md:px-6 font-medium text-slate-500">💻 Codes</button>
-      <button data-tab="projects"     class="tab-btn flex-1 py-3 px-4 md:py-4 md:px-6 font-medium text-slate-500">🔬 PhD Projects</button>
-      <button data-tab="certifications" class="tab-btn flex-1 py-3 px-4 md:py-4 md:px-6 font-medium text-slate-500">📜 Certifications</button>
+  <button data-tab="content-conferences"
+          class="tab-btn flex-1 py-3 px-4 md:py-4 md:px-6 font-medium text-slate-500">
+    🎤 Conferences
+  </button>
 
-      <div class="tab-indicator absolute bottom-0 h-0.5 bg-slate-800 w-1/5"></div>
-    </div>
+  <button data-tab="content-codes"
+          class="tab-btn flex-1 py-3 px-4 md:py-4 md:px-6 font-medium text-slate-500">
+    💻 Code
+  </button>
+
+  <button data-tab="content-projects"
+          class="tab-btn flex-1 py-3 px-4 md:py-4 md:px-6 font-medium text-slate-500">
+    🔬 Projects
+  </button>
+
+  <button data-tab="content-certifications"
+          class="tab-btn flex-1 py-3 px-4 md:py-4 md:px-6 font-medium text-slate-500">
+    📜 Certifications
+  </button>
+
+  <!-- Indicator -->
+  <span id="tab-indicator"
+        class="absolute bottom-0 h-0.5 bg-indigo-600 transition-all duration-300"></span>
+</div>
   </div>
 </nav>
 
@@ -572,7 +594,7 @@ Hey! my name is Princy and I'm originally from Madagascar.
 </div>
 
 <!-- ================= JS ================= -->
-<script>
+<<!-- script>
   const tabs = document.querySelectorAll('.tab-btn');
   const indicator = document.querySelector('.tab-indicator');
   const contents = document.querySelectorAll('.tab-content');
@@ -584,11 +606,12 @@ Hey! my name is Princy and I'm originally from Madagascar.
 
       indicator.style.transform = `translateX(${i * 100}%)`;
 
+
       contents.forEach(c => c.classList.add('hidden'));
       document.getElementById(`content-${tab.dataset.tab}`).classList.remove('hidden');
     });
   });
-</script>
+</script> -->
 <script>
   /* ===== Academic Metrics Configuration ===== */
   const academicMetrics = {
@@ -869,5 +892,53 @@ Hey! my name is Princy and I'm originally from Madagascar.
 
   fetchGitHubRepos();
 </script>
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+  const contents = document.querySelectorAll('.tab-content');
+  const indicator = document.getElementById('tab-indicator');
+  const container = document.getElementById('tab-container');
+
+  function activateTab(tab) {
+    const targetId = tab.dataset.tab;
+    const targetContent = document.getElementById(targetId);
+
+    // Tabs
+    tabs.forEach(t => t.classList.remove('text-indigo-600'));
+    tab.classList.add('text-indigo-600');
+
+    // Content panels
+    contents.forEach(c => c.classList.add('hidden'));
+    if (targetContent) targetContent.classList.remove('hidden');
+
+    // Indicator
+    const left = tab.offsetLeft - container.scrollLeft;
+    indicator.style.left = `${left}px`;
+    indicator.style.width = `${tab.offsetWidth}px`;
+
+    // Keep active tab visible on mobile
+    tab.scrollIntoView({
+      behavior: 'smooth',
+      inline: 'center',
+      block: 'nearest'
+    });
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => activateTab(tab));
+  });
+
+  // Initial state on page load
+  window.addEventListener('load', () => {
+    const initialTab = tabs[0];
+    activateTab(initialTab);
+  });
+
+  // Keep indicator aligned on resize
+  window.addEventListener('resize', () => {
+    const activeTab = document.querySelector('.tab-btn.text-indigo-600');
+    if (activeTab) activateTab(activeTab);
+  });
+</script>
+
 </body>
 </html>
