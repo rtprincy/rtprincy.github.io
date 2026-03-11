@@ -56,6 +56,32 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  .tool-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.tool-card h3 {
+  margin-top: 0;
+}
+
+.tool-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.tool-card a:hover {
+  background: #005fa3;
+}
   </style>
 </head>
 
@@ -175,28 +201,34 @@ Hey! my name is Princy and I'm originally from Madagascar.
 
   <button data-tab="content-publications"
           class="tab-btn shrink-1 flex-1 py-3 px-4 md:py-4 font-medium">
-    📄 Publications
+    Publications
   </button>
 
   <button data-tab="content-conferences"
           class="tab-btn shrink-1 flex-1 py-3 px-4 md:py-4 font-medium">
-    🎤 Conferences
+    Conferences
   </button>
 
   <button data-tab="content-codes"
           class="tab-btn shrink-1 flex-1 py-3 px-4 md:py-4 font-medium">
-    💻 Code
+    Code
   </button>
 
   <button data-tab="content-projects"
           class="tab-btn shrink-1 flex-1 py-3 px-4 md:py-4 font-medium">
-    🔬 Projects
+    Projects
   </button>
 
   <button data-tab="content-certifications"
           class="tab-btn shrink-1 flex-1 py-3 px-4 md:py-4 font-medium">
           <!-- tab-btn shrink-0 px-4 py-3 md:py-4 font-medium -->
-    📜 Certifications
+    Certifications
+  </button>
+
+  <button data-tab="content-tools"
+          class="tab-btn shrink-1 flex-1 py-3 px-4 md:py-4 font-medium">
+          <!-- tab-btn shrink-0 px-4 py-3 md:py-4 font-medium -->
+    Tools
   </button>
 
   <!-- Indicator -->
@@ -612,18 +644,36 @@ Hey! my name is Princy and I'm originally from Madagascar.
       </a> -->
     </div>
   </article>
-
   <!-- Add more certificates here with the same layout -->
 
 </section>
 
+<!-- <section id="content-tools" class="tab-content hidden space-y-4"> -->
+<div id="content-tools" class="tab-content">
+  <!-- <div class="flex items-center gap-4"> -->
+  <article class="card bg-white rounded-xl p-5 shadow-sm border border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+
+  <h2>This is an interactive tool for exploring light curves and variability.</h2>
+</article>
+
+  <div class="tool-card">
+
+  <img src="assets/streamlit_preview_page.png" width="80%">
+
+  <a href="https://astro-ml.streamlit.app" target="_blank">
+  Launch App
+  </a>
+
+</div>
+</div>
+<!-- </section> -->
 
 </main>
 
 <!-- ================= FOOTER ================= -->
 <footer class="border-t border-slate-200 bg-white/60 backdrop-blur py-6 text-center">
   <p class="text-sm text-slate-500">
-    © 2026 Dr. Princy Ranaivomanana • Academic Portfolio
+    © 2026 Princy Ranaivomanana • Academic Portfolio
   </p>
 </footer>
 
